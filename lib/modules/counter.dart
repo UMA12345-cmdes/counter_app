@@ -1,10 +1,10 @@
 import 'package:rxdart/rxdart.dart';
 
-class CounterBloc {
+class Counter {
   int initialCount = 0;
   BehaviorSubject<int>? _subjectCounter;
 
-  CounterBloc({required this.initialCount}) {
+  Counter({required this.initialCount}) {
     _subjectCounter = BehaviorSubject<int>.seeded(initialCount);
   }
 

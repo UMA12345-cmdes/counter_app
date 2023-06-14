@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rx_dart_counter/modules/bloc/counter_bloc.dart';
+import 'package:rx_dart_counter/modules/counter.dart';
 
 class MyHomePage extends StatefulWidget {
   final String? title;
@@ -11,7 +11,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  final CounterBloc _counterBloc = CounterBloc(initialCount: 0);
+  final Counter _counterBloc = Counter(initialCount: 0);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
